@@ -1,4 +1,7 @@
 .card {
+    display: flex;
+    text-align: center;
+
     &__name {
         overflow: hidden;
         display: -webkit-box;
