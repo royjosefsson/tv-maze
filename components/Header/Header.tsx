@@ -27,7 +27,7 @@ const Header = (props: PageProps) => {
     return (
         <header className={`header ${!isLoaded ? "header--full-height" : ""}`.trim()}>
             <div className="header__content">
-                <Link href="/" aria-label="Gå till startsida" as="image">
+                <Link href="/" aria-label="Gå till startsida">
                     <SmartImage width={139} height={44} alt="TV Maze's logo" src="/logo.png" />
                 </Link>
                 <div className="header__search-input-wrapper">

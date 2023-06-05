@@ -18,7 +18,7 @@ const GridContent = (props: GridContentProps) => {
     return (
         <main className={`grid-content ${className}`.trim()}>
             {shows.map((show, i) => (
-                <Link key={show.id} href={`/details/${show.id}`} as="image">
+                <Link key={show.id} href={`/details/${show.id}`}>
                     {/* Priority=true if image is above the fold */}
                     <Card show={show} dataTestId={dataTestId} priority={i < 4} />
                 </Link>
