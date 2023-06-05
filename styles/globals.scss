@@ -1,0 +1,33 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--body);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.layout {
+  padding: 0 1.25rem;
+  max-width: 1090px;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  @media screen and (max-width: 1089px) {
+    max-width: 545px;
+  }
+}
+
+.title {
+  color: var(--title);
+  font-weight: 500;
+}
+
+.small {
+  color: var(--small-text);
+  font-size: 0.8em;
+}

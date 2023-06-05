@@ -1,0 +1,27 @@
+.card {
+    &__name {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        color: var(--title);
+        padding-top: 0.5rem;
+        font-size: 0.75em;
+
+        @media screen and (min-width: 465px) {
+            font-size: 1em;
+        }
+    }
+
+    &__image {
+        height: 295px;
+        max-width: 210px;
+        width: auto;
+        object-fit: cover;
+
+        @media screen and (max-width: 465px) {
+            height: 180px;
+            max-width: 128px;
+        }
+    }
+}
