@@ -6,10 +6,11 @@ interface SmartImageProps {
     width: number;
     alt: string;
     src?: string;
+    priority?: boolean
 }
 
 const SmartImage = (props: SmartImageProps) => {
-    const { height, width, alt, src, className } = props
+    const { height, width, alt, src, className, priority } = props
 
     return (
         <Image
@@ -17,6 +18,7 @@ const SmartImage = (props: SmartImageProps) => {
             height={height}
             width={width}
             alt={alt}
+            priority={priority}
             src={src || "/error-image.png"}
         />
     )

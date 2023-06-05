@@ -6,10 +6,11 @@ interface ShowCardProps {
     show: Show,
     className?: string
     dataTestId?: string
+    priority?: boolean
 }
 
 const Card = (props: ShowCardProps) => {
-    const { show, className = "", dataTestId } = props
+    const { show, className = "", dataTestId, priority } = props
     return (
         <article className={`card ${className}`.trim()} data-testid={dataTestId}>
             <div>
@@ -19,6 +20,7 @@ const Card = (props: ShowCardProps) => {
                     width={210}
                     src={show.image?.medium}
                     alt={show.name}
+                    priority={priority}
                 />
                 <div className="card__name">{show.name}</div>
                 <Stars amount={Math.round(show.rating.average)} />

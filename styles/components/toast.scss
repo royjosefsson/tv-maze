@@ -1,0 +1,14 @@
+.toast {
+    background: var(--toast-background);
+    position: sticky;
+    top: 110px;
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 84%, 0.6);
+    display: none;
+
+    &.visible {
+        display: unset;
+    }
+}

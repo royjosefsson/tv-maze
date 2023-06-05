@@ -1,7 +1,6 @@
-import { KeyboardEvent, createRef, useRef } from "react"
+import { createRef } from "react"
 import Link from "next/link"
 import { useRouter } from 'next/router';
-import { Logo } from "../../asserts";
 import { SearchInput } from "../SearchInput";
 import { SmartImage } from "../SmartImage";
 
@@ -28,9 +27,8 @@ const Header = (props: PageProps) => {
     return (
         <header className={`header ${!isLoaded ? "header--full-height" : ""}`.trim()}>
             <div className="header__content">
-                <Link href="/" aria-label="Gå till startsida">
-                    {/* <Logo className="header__logo" /> */}
-                    <SmartImage  width={139} height={44} alt="TV Maze's logo" src="/logo.png" />
+                <Link href="/" aria-label="Gå till startsida" as="image">
+                    <SmartImage width={139} height={44} alt="TV Maze's logo" src="/logo.png" />
                 </Link>
                 <div className="header__search-input-wrapper">
                     <SearchInput
