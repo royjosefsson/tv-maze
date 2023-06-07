@@ -3,7 +3,8 @@ This is a Next.js application for displaying TV show information using the TV Ma
 
 ### Installation
 1. Clone this repository: git clone https://github.com/royjosefsson/tv-maze.git
-2. Navigate to the project 3. directory: cd tv-maze
+2. Navigate to the project 
+3. directory: cd tv-maze
 Install the dependencies: 
 ``` bash
 npm install
