@@ -3,9 +3,9 @@ interface ToastProps {
 }
 
 const Toast = (props: ToastProps) => {
-    const {isVisible} = props
+    const { isVisible } = props
     return (
-        <div className={`toast ${isVisible ? "visible" : ""}`}>
+        <div className={`toast ${isVisible ? "visible" : ""}`.trim()}>
             Laddar...
         </div>
     )
